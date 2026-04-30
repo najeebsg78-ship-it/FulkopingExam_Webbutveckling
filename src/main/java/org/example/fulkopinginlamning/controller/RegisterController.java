@@ -66,13 +66,7 @@ public class RegisterController extends HttpServlet {
             System.out.println(ex.getMessage());
         }
 
-        try {
-            req.getRequestDispatcher(REGISTER_VIEW).forward(req, resp);
-        } catch (Throwable ex){
-            throw ex;
-        }
 
-
-
+        req.getRequestDispatcher(REGISTER_VIEW).forward(req, resp);
     }
 }

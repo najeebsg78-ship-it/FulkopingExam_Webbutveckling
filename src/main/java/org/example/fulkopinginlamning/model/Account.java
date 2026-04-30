@@ -10,7 +10,7 @@ public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer authorId;
+    private Integer id;
 
     @Column (nullable = false)
     private String firstname;
@@ -29,12 +29,12 @@ public class Account {
         changed = new Date();
     }
 
-    public Integer getAuthorId() {
-        return authorId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setAuthorId(Integer authorId) {
-        this.authorId = authorId;
+    public void setId(Integer authorId) {
+        this.id = authorId;
     }
 
     public String getFirstname() {
@@ -88,7 +88,7 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
-                "authorId=" + authorId +
+                "Id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", country='" + country + '\'' +

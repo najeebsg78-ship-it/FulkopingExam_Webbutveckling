@@ -18,7 +18,7 @@ public class AppController extends HttpServlet {
         if (session == null || session.getAttribute("user") == null) {
             req.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(req, resp);
         } else {
-            req.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(req, resp);
+            req.getRequestDispatcher("/webapp/index.jsp").forward(req, resp);
         }
 
     }

@@ -5,7 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fulkoping_library?useSSL=false</property>
+        <property name="hibernate.connection.url">jdbc:mysql://mysql:3306/fulkoping_library?useSSL=false</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">rootpassword</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -18,7 +18,8 @@
 	    If set to none you   have to create the tables in the database
 	    by your selves.
         -->
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <!--
             This is our enteties (tables)
         <mapping class="namespace.ClassName" />

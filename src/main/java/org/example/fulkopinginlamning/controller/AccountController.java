@@ -11,7 +11,7 @@ import org.example.fulkopinginlamning.model.Account;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/account")
+@WebServlet("/account/*")
 public class AccountController extends HttpServlet {
 
     private static final String ACCOUNT_LIST_VIEW = "/WEB-INF/view/account/list.jsp";
@@ -90,7 +90,7 @@ public class AccountController extends HttpServlet {
         String stringId = req.getParameter(parameterName);
         Account account = new Account();
 
-        if (stringId != null && !stringId.isEmpty()){
+        if (stringId != null && !stringId.isEmpty()) {
             Integer id = Integer.parseInt(stringId);
             account = accountDAO.findById(id);
         }

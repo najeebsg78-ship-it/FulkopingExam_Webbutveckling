@@ -52,7 +52,7 @@ public abstract class GenericDAO<T, ID extends Serializable> {
             action.execute(session);
             tx.commit();
         } catch (Exception ex){
-            if (tx == null) tx.rollback();
+            if (tx != null) tx.rollback();
             throw ex;
         }
 

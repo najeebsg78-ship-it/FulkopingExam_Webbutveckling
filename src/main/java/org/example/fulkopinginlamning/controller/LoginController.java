@@ -21,7 +21,7 @@ public class LoginController extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String logout = req.getParameter("logga ut");
+        String logout = req.getParameter("logout");
 
         if ("true".equals (logout)){
             HttpSession session = req.getSession(false);
@@ -76,6 +76,6 @@ public class LoginController extends HttpServlet {
             return;
         }
 
-        resp.sendRedirect(req.getContextPath() + "/");
+        resp.sendRedirect(req.getContextPath() + "/home");
     }
 }

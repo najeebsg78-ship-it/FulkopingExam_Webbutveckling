@@ -42,6 +42,8 @@
     <button type="submit" class="btn btn-primary">Login</button>
     <a href="${pageContext.request.contextPath}/register" class="btn btn-secondary">Registera</a>
     </div>
+
+
 </form>
 
 </body>

@@ -17,7 +17,7 @@
 
 <% if (request.getAttribute("success") != null){ %>
 <p style="color: green"><%= request.getAttribute("success")%></p>
-<p><a href="<%= request.getContextPath() %>/login"></a>Gå till login</p>
+<a href="<%= request.getContextPath() %>/login">Gå till login</a>
 <% } else { %>
 
 <form action="<%= request.getContextPath() %>/register" method="post">

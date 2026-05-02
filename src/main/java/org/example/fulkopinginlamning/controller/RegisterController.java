@@ -13,7 +13,7 @@ import java.io.IOException;
 
 
 @WebServlet("/register")
-public class RegisterController extends HttpServlet {
+public class    RegisterController extends HttpServlet {
 
     private static final String REGISTER_VIEW = "/WEB-INF/view/register.jsp";
 
@@ -63,7 +63,7 @@ public class RegisterController extends HttpServlet {
             req.setAttribute("success", "Användare har skapats");
         } catch (Throwable ex) {
             req.setAttribute("error", "Användare kunde inte skapas");
-            System.out.println(ex.getMessage());
+            ex.printStackTrace();
         }
 
 

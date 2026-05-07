@@ -37,7 +37,7 @@
 
     <div style="margin-top: 15px;">
         <button type="submit" class="btn btn-primary">Save</button>
-        <a href="${pageContext.request.contextPath}/account?getId" class="btn btn-secondary">Cancel</a>
+        <a href="${pageContext.request.contextPath}/home" class="btn btn-secondary">Cancel</a>
     </div>
 
 

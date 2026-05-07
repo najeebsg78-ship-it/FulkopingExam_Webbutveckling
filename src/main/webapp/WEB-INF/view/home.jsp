@@ -18,6 +18,7 @@
             <a href="${pageContext.request.contextPath}/login?logout=true" class="btn btn-primary btn-lg px-4 gap-3">Logga ut</a>
             <a href="${pageContext.request.contextPath}/account?editId=1" class="btn btn-outline-secondary btn-lg px-4">Ändra konto</a>
             <a href="${pageContext.request.contextPath}/account?editId=1" class="btn btn-outline-secondary btn-lg px-4">Ditt Profil</a>
+            <a href="${pageContext.request.contextPath}/history" class="btn btn-outline-secondary btn-lg px-4">Historik</a>
         </div>
     </div>
 

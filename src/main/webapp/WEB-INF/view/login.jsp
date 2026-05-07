@@ -41,6 +41,7 @@
     <div style="margin-top: 15px;">
     <button type="submit" class="btn btn-primary">Login</button>
     <a href="${pageContext.request.contextPath}/register" class="btn btn-secondary">Registera</a>
+        <a href="${pageContext.request.contextPath}/index.jsp" class="btn btn-secondary">Back</a>
     </div>
 
 

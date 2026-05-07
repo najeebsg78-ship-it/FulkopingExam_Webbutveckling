@@ -57,7 +57,7 @@ public class AccountController extends HttpServlet {
         Account account = new Account();
 
         String stringId = req.getParameter("id");
-        if (stringId != null){
+        if (stringId != null && !stringId.isEmpty()){
             Integer id = Integer.parseInt(stringId);
             if (id != 0){
                 account = accountDAO.findById(id);
